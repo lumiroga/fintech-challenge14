@@ -11,9 +11,9 @@ The source data includes:
 
 The objective was to test a trading algorithms and the different predictions with Support Vector Machines and LogisticRegrssion
 
---
+---
 
-## Results
+## Results - Baseline Trading Algorithm
 
 
 
@@ -49,7 +49,18 @@ The best performance with the different parameters and combination is with a 4 a
 
 <img src="./assets/cummulative_return_best.png" >
 
---
+## Results - New Machine Learning Classifier
+
+Using Logistics Regression the following classification report was generated:
+
+<img src="./assets/classification_report_ml.png" >
+
+It proves to have a better accuracy and a better precision for finding wheter the price goes down or up.
+However, calculating the cummulative return there is an important decline at the end of the time period, however for most of the time the performance was above the baseline.
+
+<img src="./assets/classification_report_ml.png.png" >
+
+---
 
 ## Technologies
 
