@@ -94,7 +94,7 @@ Library for machine learning model creation, processing, testing, evaluation and
 
 ### Clone repository
 ```bash
-git clone https://github.com/lumiroga/fintech-challenge14.git`
+git clone https://github.com/lumiroga/fintech-challenge14.git
 ```
 ---
 
