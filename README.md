@@ -60,6 +60,12 @@ However, calculating the cummulative return there is an important decline at the
 
 <img src="./assets/classification_report_ml.png.png" >
 
+## Conclusions
+
+Based on the different experiments using the different test windows and SMA averages we can determine that the combination of a small window of 4 and a large window of 100 proves to be affective, the best approach is using around 6 months to predict, if you take more time, it will overfit.
+
+Regarding the algorithm, Support Vector Machine seems to be more tolerant to sudden changes than Logistic Regression in the price tendency.
+
 ---
 
 ## Technologies
