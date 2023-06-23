@@ -22,6 +22,32 @@ The objective was to test a trading algorithms and the different predictions wit
 The results for the baseline performance, (predicting whether the price increases or decreases), via Support Vector Machine, shows that when using the Predictions (shifted one timeslot), it would outperform the standard percent change in the given timeslot.
 <img src="./assets/cummulative_return.png" >
 
+### Tuning Baseline performance - **Change Training Size**
+
+* **4 Years increased training data**
+The results for the baseline performance with 4 years of learning, generates the same performance as the original percentage change. However, the SVM is not very good predicting the negative scenario (when the stock price goes down) as the table shows.
+
+<img src="./assets/cummulative_return_4years.png" >
+<img src="./assets/classification_report_1.png" >
+
+* **6 months increased training data**
+The performance of the algorithm when only increasing the testing window to 6 months is still better than the percentage change return, however the algorithm is not very good at predicting the decrease of the price
+
+<img src="./assets/cummulative_return_6months.png" >
+<img src="./assets/classification_report_2.png" >
+
+### Tuning Baseline performance - **Increase the SMA input features window size (10 and 50)**
+
+The performance of the algorithm when only increasing the SMA window from 4 to 10 and decresing the large window from 100 to 50 is worse, the cummulative return is not as good as the previous windows, although the SVM is better at predicting a decrease in the value than the previous models.
+
+<img src="./assets/cummulative_return_10_50_window.png" >
+<img src="./assets/classification_report_3.png" >
+
+### Tuning Baseline performance - **Best performance**
+
+The best performance with the different parameters and combination is with a 4 and 100 SMA rolling window, Support Vector Machine with rbf kernel and a testing sample of 6 months, this generates the best cummulative return.
+
+<img src="./assets/cummulative_return_best.png" >
 
 --
 
